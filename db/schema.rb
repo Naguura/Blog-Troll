@@ -17,16 +17,7 @@ ActiveRecord::Schema.define(version: 2019_09_22_143546) do
     t.text "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "articles_id"
     t.integer "user_id"
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.text "description"
-    t.integer "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,5 +28,4 @@ ActiveRecord::Schema.define(version: 2019_09_22_143546) do
     t.string "password_digest"
   end
 
-  add_foreign_key "comments", "users"
 end

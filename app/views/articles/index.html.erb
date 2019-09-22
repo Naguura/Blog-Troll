@@ -1,8 +1,8 @@
 <section class="section">
     <div class="container">
         <div class="columns">  
-            <%= render 'content' %>
+           <%= render 'content' %>
         </div>
     </div>
-<%= time_ago_in_words(article.created_at) %>
+<small>Created by: <%= article.user.username if article.user%>
 </section>
