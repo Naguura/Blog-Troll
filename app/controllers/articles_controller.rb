@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+  
   end
 
   def show
@@ -16,6 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
+
     @article = Article.new(article_params)
     @article.user = User.first
     respond_to do |format|

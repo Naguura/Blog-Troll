@@ -258,6 +258,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   better_errors (~> 2.5, >= 2.5.1)
   bootsnap (>= 1.4.2)
   bulma-rails (~> 0.7.5)
