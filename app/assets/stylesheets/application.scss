@@ -1,0 +1,41 @@
+
+@import "bulma";
+
+.navbar-brand .title {
+	color: white;
+	
+}
+
+.navbar {
+	padding: 10px;
+}
+.navbar-brand .subtitle {
+	color: grey;
+}
+
+//round images
+.image {
+	
+	border-radius: 50%;
+	img {
+		/*border: solid  black;*/
+		border-radius: 50%;
+	}
+}
+
+.notifications:not(:last-child){
+	margin-bottom: 0;
+}
+
+.button {
+	border-collapse: separate;
+	text-align: center;
+	display: inline-block;
+	background-color: white;
+  	color: black;
+  	border: 3px solid #4CAF50;
+  	margin-top:  5%;
+  	margin-bottom:  5%;
+  	margin-right: 60%;
+}
+
